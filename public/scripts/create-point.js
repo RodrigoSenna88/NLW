@@ -70,6 +70,8 @@ document
 
     const itemId = itemLi.dataset.id
 
+    console.log('ITEM ID: ', itemId)
+
 
     // Verificar se existem ítens selecionados, se sim 
     //pegar os itens selecionados
@@ -94,8 +96,10 @@ document
     } else{
       //se não estiver selecionado adcionar a seleção
       selectedItems.push(itemId)
-
     }
+
+    console.log('selectedItems', selectedItems)
+
     //atualizar o campo escondido com os ítens selecionados
     collectedItems.value = selectedItems
 
